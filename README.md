@@ -3,11 +3,8 @@
 **Drafting Skills**: AutoCAD
 
 ### Education
-High Performance Buildings, MSc <br/>
-Electrical Engineering, BEng
-
-### Work Experience 
-Electrical Engineering Design
+MSc in High Performance Buildings <br/>
+BEng in Electrical Engineering
 
 ### Projects
 Data Analytics
