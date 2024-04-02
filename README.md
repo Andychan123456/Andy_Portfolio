@@ -1,7 +1,7 @@
 # Andy_Portfolio for Data Analytics
 
 ### Education
-High Performance Buildings, MSc
+High Performance Buildings, MSc\n
 Electrical Engineering, BEng
 
 ### Work Experience 
