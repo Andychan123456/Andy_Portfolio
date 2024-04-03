@@ -11,7 +11,6 @@ BEng in Electrical Engineering
 3. Data Analysis for sales performance data
 
 ### Projects
-1. Data analysis for Stock  
-2. <br/>
-
+1. Data analysis for Dow Jones Index in 2011 
+2. Data analysis for Sales Trend of Products
 
