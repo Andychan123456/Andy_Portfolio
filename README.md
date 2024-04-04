@@ -12,6 +12,6 @@ BEng in Electrical Engineering
 
 ### Data Analysis Projects
 1. Data analysis for Dow Jones Index in 2011 
-2. Data analysis for Sales Trend of Products
+2. Data analysis for Sales Performance
 
-Project Link: (https://github.com/Andychan123456/Andy_Portfolio)
+Project Link: (https://github.com/Andychan123456/Andy_Portfolio/tree/main/Dow_Jones_Index)
