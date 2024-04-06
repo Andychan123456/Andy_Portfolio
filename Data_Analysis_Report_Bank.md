@@ -29,7 +29,7 @@ Before analysis, we need to figure out what kinds of questions is interested to 
 Data Format: structured numerical data <br/>
 After identifying the data format, more advanced data preprocessing techniques are required:
 1. Data Cleaning Skills <br/>
-Aim: although the dataset is quite completed with no missing values, the data shall also be checked with any duplicated values.
+Aim: although the dataset is quite completed with no missing values, the data shall also be checked with any duplicated values. <br/>
 ```python
 # no missing data
 # check any duplicated data
@@ -37,7 +37,7 @@ print('The Duplicates Count in Data: {}.'.format(df.duplicated().sum()))
 ```
 
 2. Data Analytical Skills <br/>
-Aim: To study the frequency in term of each variables for knowing the basic data information first, then define self-make function for simlifying the visualization process
+Aim: To study the frequency in term of each variables for knowing the basic data information first, then define self-make function for simlifying the visualization process <br/>
 ```python
 # no duplicated data
 
@@ -57,7 +57,7 @@ def plot_pie_bar(dataset, title):
     plt.grid(True)
     plt.tight_layout()
 ```
-Aim: to create pivot table for calculation of the corresponding probabiility in term of the variables.
+Aim: to create pivot table for calculation of the corresponding probabiility in term of the variables. <br/>
 ```python
 # create pivot table for evaluation of exited rate
 # for probability estimation
@@ -66,7 +66,7 @@ pd.pivot_table(df, index=['Gender'], values=['Exited'], margins=True)
 
 3. Data Binning Skills <br/>
 Aim: for specific columns like 'credit score' and 'age' may not be easily applied without preprocessing. To make the required information to be clean in analysis and visualization, it is suggested to perform data binning to add new features into the original dataset. <br/>
-The below demostration for handling credit score data by FICO model can be a good example of data binning.
+The below demostration for handling credit score data by FICO model can be a good example of data binning. <br/>
 ```python
 # Customer Distribution of Credit Score
 # For better understanding, it is suggested to implement data binning to consider credit score
@@ -86,7 +86,7 @@ df
 ```
 
 4. Data Grouping <br/>
-Aim: construct correlation matrix and heatmap visualization for analysis of correlation
+Aim: construct correlation matrix and heatmap visualization for analysis of correlation <br/>
 ```python
 # Attempt for correlation matrix to see any different insight as found
 # Before correlation analysis, let's copy another set of data and remove some irrelvant data columns
@@ -108,7 +108,7 @@ plt.show()
 ```
 
 5. Machine Learning Model Training for Data Prediction <br/>
-Aim: to convert category data into number by label encoder, preparing data for upcoming model training.
+Aim: to convert category data into number by label encoder, preparing data for upcoming model training. <br/>
 ```python
 # define function for category by label encoder
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
@@ -124,7 +124,7 @@ df_ml = encode_cat(df_ml, df_category)
 df_ml
 ```
 
-Aim: check with multi-collinearity diagnosis to prevent the trained model to be extremely sensitive with the changes of high correlation variable.
+Aim: check with multi-collinearity diagnosis to prevent the trained model to be extremely sensitive with the changes of high correlation variable. <br/>
 ```python
 # check with multi-collinearity diagnosis
 from patsy import dmatrices
@@ -137,7 +137,7 @@ vid_df['VIF'] = [variance_inflation_factor(X.values, i) for i in range(X.shape[1
 print(vid_df)
 ```
    
-Aim: perform data standardlization and data splitting for training set and testing set. Models can be constructed with their corresponding accuracy.
+Aim: perform data standardlization and data splitting for training set and testing set. Models can be constructed with their corresponding accuracy. <br/>
 ```python
 # data standardlization for more accurate result
 # Classification
