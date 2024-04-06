@@ -1,7 +1,7 @@
 # Andy_Portfolio for Data Analytics
 **Technical Skills**: Python (Module like numpy, scipy, pandas, matplotlib, sklearn), SQL, MATLAB, C# <br/>
 **Email**: andycthandy@gmail.com <br/>
-**Linkedin**: [Andy](www.linkedin.com/in/andy-chan-504394286)
+**Linkedin**: www.linkedin.com/in/andy-chan-504394286
 
 ### Education
 MSc in High Performance Buildings | The Hong Kong Polytechnic University <br/>
