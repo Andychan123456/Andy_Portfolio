@@ -27,7 +27,7 @@ Before analysis, we need to figure out what kinds of questions is interested to 
 
 ### *Data Analytic Techniques*
 Data Format: structured numerical data <br/>
-After identifying the data format, more advanced data preprocessing techniques are required:
+After identifying the data format, more advanced data preprocessing techniques are required: <br/>
 **Data Cleaning Skills** <br/>
 Aim: although the dataset is quite completed with no missing values, the data shall also be checked with any duplicated values. <br/>
 
