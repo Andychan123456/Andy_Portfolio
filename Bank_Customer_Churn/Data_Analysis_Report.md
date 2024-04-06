@@ -1,3 +1,8 @@
+---
+layout: default
+---
+[Back to Portfolio Page](/)
+
 # *Report of Data Analysis on Bank Customer Churn*
 
 ## *Table of Contents*
