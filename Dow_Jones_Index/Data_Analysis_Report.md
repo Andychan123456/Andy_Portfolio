@@ -1,4 +1,4 @@
-# *Report on Data Analysis*
+# *Report of Data Analysis on Dow Jones Index*
 
 ## *Table of Contents*
 - [Project Overview](#project-overview)
