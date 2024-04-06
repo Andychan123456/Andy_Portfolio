@@ -2,9 +2,7 @@
 **Technical Skills**: Python (Module like numpy, scipy, pandas, matplotlib, sklearn), SQL, MATLAB, C# <br/>
 
 ### Education
-Degree | Major | Institution
-  :-:  |  :-:  |      :-:
-MSc | High Performance Buildings | The Hong Kong Polytechnic University
+MSc | High Performance Buildings | The Hong Kong Polytechnic University <br/>
 BEng | Electrical Engineering | The University of Hong Kong
 
 ### Data Analytics Techniques 
@@ -16,6 +14,6 @@ BEng | Electrical Engineering | The University of Hong Kong
 
 ### Data Analysis Projects
 1. Data analysis for Dow Jones Index in 2011 <br/>
-Project Link: https://github.com/Andychan123456/Andy_Portfolio/blob/main/Dow_Jones_Index/Data_Analysis_Report.md
+Project Link: [Project on Dow Jones Index](https/github.com/Andychan123456/Andy_Portfolio/blob/main/Dow_Jones_Index/Data_Analysis_Report.md)
 2. Data analysis for Bank Customer Churn <br/>
-Project Link: https://github.com/Andychan123456/Andy_Portfolio/blob/main/Bank_Customer_Churn/Data_Analysis_Report.md
+Project Link: [Project on Bank Customer Churn](https://github.com/Andychan123456/Andy_Portfolio/blob/main/Bank_Customer_Churn/Data_Analysis_Report.md)
