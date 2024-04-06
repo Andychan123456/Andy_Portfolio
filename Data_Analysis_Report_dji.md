@@ -31,7 +31,8 @@ Data Format: structured time-series data, require module like Plotly <br/>
 After identifying the data format, more advanced data preprocessing techniques are required: <br/>
 **Data formatting Skills** <br/>
 Aim: To remove the sign '$' in the specific columns showing the stock pricing. <br/>
-```python
+
+``` python
 # find the '$' sign in below columns
 df_replace = ['open', 'high', 'low', 'close', 'next_weeks_open', 'next_weeks_close']
 
@@ -43,7 +44,7 @@ df.head()
 <br/>
 Aim: convert column 'date' into datetime type <br/>
 
-```python
+``` python
 # import date type module
 import datetime
 df['date'] = pd.to_datetime(df['date'])
@@ -53,7 +54,7 @@ df.info()
 **Data Cleaning Skills** <br/>
 Aim: check missing value and confirm data filling <br/>
 
-```python
+``` python
 # checking any missing data and relevance
 df.isnull().sum()
 ```
@@ -63,7 +64,7 @@ In this case, it is not suggested to delete the rows with missing value because 
 Data filling is also not recommended because the missing values is relate to previous week data. Filling with previous values can create contradiction as compared to the stock closing price. <br/>
 Therefore, it is better to delete the two irrelevant columns with missing values for high accuracy in data analysis. <br/>
 
-```python
+``` python
 # only missing data in two columns
 # not recommended to just delete the rows of data because it lead to unaccurate analysis for other columns
 # not recommended to fill missing values by previous values or interpolation because not make sense for the values compared to last weeks
@@ -74,7 +75,7 @@ df.drop(['percent_change_volume_over_last_wk', 'previous_weeks_volume'], axis=1,
 **Data Grouping** <br/>
 Aim: group the specific variables and provide clean table for analysis <br/>
 
-```python
+``` python
 # let's see the average pricing for each stock 
 df.groupby(['stock'])[['open', 'high', 'low', 'close']].mean()
 
@@ -85,7 +86,7 @@ print('The top five stock with highest average price: {}'.format(top_five_close)
 <br/>
 Aim: construct correlation matrix and heatmap visualization for analysis of correlation <br/>
 
-```python
+``` python
 # apply heatmap to visualize the correlation
 plt.figure(figsize=(25, 15))
 sns.heatmap(df_close.corr(), linewidths=0.5)
@@ -99,7 +100,7 @@ plt.tight_layout()
 **Machine Learning Model Training for Data Prediction** <br/>
 Aim: perform data standardlization and data splitting for training set and testing set. Models can be constructed with their corresponding accuracy. <br/>
 
-```python
+``` python
 # Since all the variables have moderate correlation with 'close' target
 # can be suitable for development of predictive model
 
