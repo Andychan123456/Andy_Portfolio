@@ -28,7 +28,7 @@ Before analysis, we need to figure out what kinds of questions is interested to 
 ### *Data Analytic Techniques*
 Data Format: structured numerical data <br/>
 After identifying the data format, more advanced data preprocessing techniques are required:
-1. Data Cleaning Skills <br/>
+- Data Cleaning Skills <br/>
 Aim: although the dataset is quite completed with no missing values, the data shall also be checked with any duplicated values. <br/>
 
 ```python
@@ -37,7 +37,7 @@ Aim: although the dataset is quite completed with no missing values, the data sh
 print('The Duplicates Count in Data: {}.'.format(df.duplicated().sum()))
 ```
 <br/>
-2. Data Analytical Skills <br/>
+- Data Analytical Skills <br/>
 Aim: To study the frequency in term of each variables for knowing the basic data information first, then define self-make function for simlifying the visualization process <br/>
 
 ```python
@@ -68,7 +68,7 @@ Aim: to create pivot table for calculation of the corresponding probabiility in 
 pd.pivot_table(df, index=['Gender'], values=['Exited'], margins=True)
 ```
 <br/>
-3. Data Binning Skills <br/>
+- Data Binning Skills <br/>
 Aim: for specific columns like 'credit score' and 'age' may not be easily applied without preprocessing. To make the required information to be clean in analysis and visualization, it is suggested to perform data binning to add new features into the original dataset. <br/>
 The below demostration for handling credit score data by FICO model can be a good example of data binning. <br/>
 
@@ -90,7 +90,7 @@ df['CreditScore_Class'] = df_credit_score
 df
 ```
 <br/>
-4. Data Grouping <br/>
+- Data Grouping <br/>
 Aim: construct correlation matrix and heatmap visualization for analysis of correlation <br/>
 
 ```python
@@ -113,7 +113,7 @@ plt.show()
 # Let's check this correlation matrix for further development of predictive model
 ```
 <br/>
-5. Machine Learning Model Training for Data Prediction <br/>
+- Machine Learning Model Training for Data Prediction <br/>
 Aim: to convert category data into number by label encoder, preparing data for upcoming model training. <br/>
 
 ```python
