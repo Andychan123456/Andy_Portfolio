@@ -2,8 +2,8 @@
 **Technical Skills**: Python (Module like numpy, scipy, pandas, matplotlib, sklearn), SQL, MATLAB, C# <br/>
 
 ### Education
-MSc | High Performance Buildings | The Hong Kong Polytechnic University <br/>
-BEng | Electrical Engineering | The University of Hong Kong
+MSc in High Performance Buildings | The Hong Kong Polytechnic University <br/>
+BEng in Electrical Engineering | The University of Hong Kong
 
 ### Data Analytics Techniques 
 1. Data cleaning, preprocessing with justification
