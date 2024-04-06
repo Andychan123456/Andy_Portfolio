@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-[back] (./)
+[Back to Portfolio Page](/)
 
 # *Report of Data Analysis on Dow Jones Index*
 
