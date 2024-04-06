@@ -19,17 +19,17 @@ The objectives of this report is to discover any potential insights for the stoc
 ### *Data Sources*
 The dataset used in this report is extracted from the UCI repository, providing the weekly data of Dow Jones Industrial Index in 2011. [1]
 
-### *Exploratory Data Analysis*
+### *Exploratory Data Analysis* 
 Before analysis, we need to figure out what kinds of questions is interested to be investigated as listed below:
 1. What is the average price for each stock?
 2. How is the correlation between two stocks?
 3. What parameters can lead to higher pricing?
 4. Develop model for stock IBM to predict pricing?
 
-### *Data Analytic Techniques*
+### *Data Analytic Techniques* 
 Data Format: structured time-series data, require module like Plotly <br/>
-After identifying the data format, more advanced data preprocessing techniques are required:
-1. Data formatting Skills <br/>
+After identifying the data format, more advanced data preprocessing techniques are required: <br/>
+**Data formatting Skills** <br/>
 Aim: To remove the sign '$' in the specific columns showing the stock pricing. <br/>
 ```python
 # find the '$' sign in below columns
@@ -40,23 +40,29 @@ for i in df_replace:
     df[i] = pd.to_numeric(df[i].map(lambda x: str(x).replace('$', '')))
 df.head()
 ```
+<br/>
 Aim: convert column 'date' into datetime type <br/>
+
 ```python
 # import date type module
 import datetime
 df['date'] = pd.to_datetime(df['date'])
 df.info()
 ```
-2. Data Cleaning Skills <br/>
+<br/>
+**Data Cleaning Skills** <br/>
 Aim: check missing value and confirm data filling <br/>
+
 ```python
 # checking any missing data and relevance
 df.isnull().sum()
 ```
+<br/>
 Need to consider how to clean the missing data: delete its rows? number fill in the empty data? <br/>
 In this case, it is not suggested to delete the rows with missing value because the rows contain valid data for other columns. <br/>
 Data filling is also not recommended because the missing values is relate to previous week data. Filling with previous values can create contradiction as compared to the stock closing price. <br/>
 Therefore, it is better to delete the two irrelevant columns with missing values for high accuracy in data analysis. <br/>
+
 ```python
 # only missing data in two columns
 # not recommended to just delete the rows of data because it lead to unaccurate analysis for other columns
@@ -64,8 +70,10 @@ Therefore, it is better to delete the two irrelevant columns with missing values
 # suggested to delete the two columns due to irrelevance of our analysis
 df.drop(['percent_change_volume_over_last_wk', 'previous_weeks_volume'], axis=1, inplace=True)
 ```
-3. Data Grouping <br/>
+<br/>
+**Data Grouping** <br/>
 Aim: group the specific variables and provide clean table for analysis <br/>
+
 ```python
 # let's see the average pricing for each stock 
 df.groupby(['stock'])[['open', 'high', 'low', 'close']].mean()
@@ -74,7 +82,9 @@ df.groupby(['stock'])[['open', 'high', 'low', 'close']].mean()
 top_five_close = df.groupby(['stock'])['close'].mean().sort_values(ascending=False)[0:5]
 print('The top five stock with highest average price: {}'.format(top_five_close))
 ```
+<br/>
 Aim: construct correlation matrix and heatmap visualization for analysis of correlation <br/>
+
 ```python
 # apply heatmap to visualize the correlation
 plt.figure(figsize=(25, 15))
@@ -85,8 +95,10 @@ plt.tight_layout()
 # the correlation heatmap can help us to know the correlation
 # for example, price of AA is highly relational to DD, DIS (above 0.7).
 ```
-4. Machine Learning Model Training for Data Prediction
+<br/>
+**Machine Learning Model Training for Data Prediction** <br/>
 Aim: perform data standardlization and data splitting for training set and testing set. Models can be constructed with their corresponding accuracy. <br/>
+
 ```python
 # Since all the variables have moderate correlation with 'close' target
 # can be suitable for development of predictive model
@@ -125,6 +137,7 @@ for name, model in models.items():
 # for visualization of models' scores
 models_scores
 ```
+<br/>
 ### *Findings, Insights and Application* 
 **Q1: What is the average price for each stock?** <br/>
 Ans: can use describe() function to check each average price of the corresponding stock. <br/>
