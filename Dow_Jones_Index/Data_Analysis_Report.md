@@ -1,3 +1,8 @@
+---
+layout: default
+---
+[back] (./)
+
 # *Report of Data Analysis on Dow Jones Index*
 
 ## *Table of Contents*
