@@ -195,7 +195,7 @@ Therefore, it is suggested that the bank can set up more strategic plan for thes
 After comparing the balance and salary chart, there are around 9.5% of customers' balance with 150,000 or above. <br/>
 ![image](https://github.com/Andychan123456/Andy_Portfolio/assets/156527746/d07a2b51-4c10-4db5-96e5-4422567b898b)
 <br/>
-At the same time, there are approximately %19.9 of customers' estimated salary with $160,000. <br/>
+At the same time, there are approximately 19.9% of customers' estimated salary with $120,000 to 160,000. <br/>
 ![image](https://github.com/Andychan123456/Andy_Portfolio/assets/156527746/b64d5179-f18e-48f4-861b-f8da6e8c1f1c)
 <br/>
 It may imply that although the customer have abiliy of gaining high salary, the balance may not be necessarily high. <br/>
@@ -383,10 +383,14 @@ Overall suggestion in bank strategy to prevent high customer churn rate: <br/>
     5.2. After having $100,000 balance or above, provide extra earn points or cashback for credit card. <br/>
     5.3. Higher saving interest for those who having $150,000 or above. <br/>
     5.4. Higher discounts of bank products for customers who having $150,000 balance and five tenure. <br/>
-    5.5. Special shopping credit card offers for female customers to consume in the specific accessories, clothing and facial shops. <br/>
-    5.6. Provide more advanced training for employees to increase service quality in order to reduce the frequency of complaints. <br/>
-    5.7. If trainers is not professional to teach, better to invite famous trainers from oversea. Maybe interesting and innovative culture can be applicable in local city/country. <br/>
-    5.8. Improve the digital bank mobile app with up-to-dated user-interface to increase the efficiency of bank services, avoiding frequent manual mistake to minimize complaints. <br/>
+    5.5. Special shopping credit card offers for female customers to consume in the specific accessories, 
+         clothing and facial shops. <br/>
+    5.6. Provide more advanced training for employees to increase service quality in order to reduce the 
+         frequency of complaints. <br/>
+    5.7. If trainers is not professional to teach, better to invite famous trainers from oversea. Maybe 
+         interesting and innovative culture can be applicable in local city/country. <br/>
+    5.8. Improve the digital bank mobile app with up-to-dated user-interface to increase the efficiency of bank 
+         services, avoiding frequent manual mistake to minimize complaints. <br/>
     
 **Q3: Model development to predict the customer exit or not** <br/>
 Decision tree classifier model have been used and suitable for prediction with high accuracy (85%). <br/>
