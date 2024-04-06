@@ -102,7 +102,7 @@ plt.show()
 # Let's check this correlation matrix for further development of predictive model
 ```
 
-5. Machine Learning Model Training for Data Prediction
+5. Machine Learning Model Training for Data Prediction <br/>
 Aim: to convert category data into number by label encoder, preparing data for upcoming model training.
 ```python
 # define function for category by label encoder
