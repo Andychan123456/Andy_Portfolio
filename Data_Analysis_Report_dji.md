@@ -30,7 +30,7 @@ Before analysis, we need to figure out what kinds of questions is interested to 
 Data Format: structured time-series data, require module like Plotly <br/>
 After identifying the data format, more advanced data preprocessing techniques are required:
 1. Data formatting Skills <br/>
-Aim: To remove the sign '$' in the specific columns showing the stock pricing.
+Aim: To remove the sign '$' in the specific columns showing the stock pricing. <br/>
 ```python
 # find the '$' sign in below columns
 df_replace = ['open', 'high', 'low', 'close', 'next_weeks_open', 'next_weeks_close']
@@ -40,7 +40,7 @@ for i in df_replace:
     df[i] = pd.to_numeric(df[i].map(lambda x: str(x).replace('$', '')))
 df.head()
 ```
-Aim: convert column 'date' into datetime type
+Aim: convert column 'date' into datetime type <br/>
 ```python
 # import date type module
 import datetime
@@ -48,7 +48,7 @@ df['date'] = pd.to_datetime(df['date'])
 df.info()
 ```
 2. Data Cleaning Skills <br/>
-Aim: check missing value and confirm data filling
+Aim: check missing value and confirm data filling <br/>
 ```python
 # checking any missing data and relevance
 df.isnull().sum()
@@ -56,7 +56,7 @@ df.isnull().sum()
 Need to consider how to clean the missing data: delete its rows? number fill in the empty data? <br/>
 In this case, it is not suggested to delete the rows with missing value because the rows contain valid data for other columns. <br/>
 Data filling is also not recommended because the missing values is relate to previous week data. Filling with previous values can create contradiction as compared to the stock closing price. <br/>
-Therefore, it is better to delete the two irrelevant columns with missing values for high accuracy in data analysis.
+Therefore, it is better to delete the two irrelevant columns with missing values for high accuracy in data analysis. <br/>
 ```python
 # only missing data in two columns
 # not recommended to just delete the rows of data because it lead to unaccurate analysis for other columns
@@ -65,7 +65,7 @@ Therefore, it is better to delete the two irrelevant columns with missing values
 df.drop(['percent_change_volume_over_last_wk', 'previous_weeks_volume'], axis=1, inplace=True)
 ```
 3. Data Grouping <br/>
-Aim: group the specific variables and provide clean table for analysis
+Aim: group the specific variables and provide clean table for analysis <br/>
 ```python
 # let's see the average pricing for each stock 
 df.groupby(['stock'])[['open', 'high', 'low', 'close']].mean()
@@ -74,7 +74,7 @@ df.groupby(['stock'])[['open', 'high', 'low', 'close']].mean()
 top_five_close = df.groupby(['stock'])['close'].mean().sort_values(ascending=False)[0:5]
 print('The top five stock with highest average price: {}'.format(top_five_close))
 ```
-Aim: construct correlation matrix and heatmap visualization for analysis of correlation
+Aim: construct correlation matrix and heatmap visualization for analysis of correlation <br/>
 ```python
 # apply heatmap to visualize the correlation
 plt.figure(figsize=(25, 15))
@@ -86,7 +86,7 @@ plt.tight_layout()
 # for example, price of AA is highly relational to DD, DIS (above 0.7).
 ```
 4. Machine Learning Model Training for Data Prediction
-Aim: perform data standardlization and data splitting for training set and testing set. Models can be constructed with their corresponding accuracy.
+Aim: perform data standardlization and data splitting for training set and testing set. Models can be constructed with their corresponding accuracy. <br/>
 ```python
 # Since all the variables have moderate correlation with 'close' target
 # can be suitable for development of predictive model
