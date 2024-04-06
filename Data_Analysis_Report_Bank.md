@@ -191,7 +191,6 @@ for name, model in models.items():
 # for visualization of model accuracy
 model_scores
 ```
-<br/>
 ### *Findings, Insights and Application* 
 **Q1: Any findings discovered?** <br/>
 Before in-depth analysis, the dataset have been checked with preprocessing. All the columns-count charts have been investigated for fair analysis without large bias. <br/>
