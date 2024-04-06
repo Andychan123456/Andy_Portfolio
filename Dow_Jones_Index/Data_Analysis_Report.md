@@ -120,7 +120,7 @@ for name, model in models.items():
 # for visualization of models' scores
 models_scores
 ```
-### *Findings, Insights and Application* ✨
+### *Findings, Insights and Application* 
 **Q1: What is the average price for each stock?** <br/>
 Ans: can use describe() function to check each average price of the corresponding stock. <br/>
 The top highest price stocks are IBM ($163.1), CAT ($103.2), CVX ($101.2), MMM ($91.7) and UTX ($84.0). <br/>
